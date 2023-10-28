@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import ServiceBtn from './components/ServiceBtn'
 import MovieList from './components/MovieList'
+import MovieList1 from './components/MovieList1'
+import movies from './assets/movies'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +12,7 @@ function App() {
         <div>
           <div className="fullscreen nopadding">
             <div id="header">
-              <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" width="50px" />
+              <img src="\Users\d77co\Pictures\calendar\image.png" width="50px " />
               <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -30,9 +32,15 @@ function App() {
               <h1>Contacts</h1>
               <p>Contact information goes here.</p>
             </div>
-            <MovieList />
+            <MovieList1 />
+            
+
     
             <div className="section">
+              <button onClick={() => setCount(count + 1)}>Click me + </button>
+              <button onClick={() => setCount(count - 1)}>Click me - </button>
+              <button onClick={() => setCount(0)}>Reset</button>
+            <p>You clicked {count} times</p>  
               <h1>Make an Appointment</h1>
               <p>Instructions for making an appointment.</p>
             </div>
@@ -48,16 +56,11 @@ function App() {
           </div>
     
           <div className="semitrans">
-            <h1>Et Cetera...</h1>
-            <p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi.</p>
-            <h2>Sub est.</h2>
-            <p>Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare.</p>
-            <h2>Sed non.</h2>
-            <p>Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p>
+           <MovieList movies={movies} headingText="Movie list" />
           </div>
     
           <div className="dark">
-            <p>This pen was made by <a href="https://codepen.io/flyingfisch">flyingfisch</a>. Check out my <a href="http://toppagedesign.com">website</a>!</p>
+            <p>This is made by <a href="https://artmillennium.co.uk">ArtMillennium.co.uk</a>. Check out my <a href="https://clickandgrab.co.uk">website</a>!</p>
           </div>
         </div> 
   )

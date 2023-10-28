@@ -1,21 +1,16 @@
-const movies = [
-    { title: 'Movie 1', description: 'Description of Movie 1' },
-    { title: 'Movie 2', description: 'Description of Movie 2' },
-    { title: 'Movie 3', description: 'Description of Movie 3' }
-];
-export default function MovieList  ()  { 
+import Movie from './Movie';
+
+ export default function MovieList(props)  { 
     return (
         <div>
-            <h1>Movies</h1>
+            <h1>{props.headingText}</h1>
             <ul>
-                {movies.map((movie) => {
-                    return (
-                        <li>
-                            <h2>{movie.title}</h2>
-                            <p>{movie.description}</p>
-                        </li>
-                    )
-                })}
+                <li><Movie movieData={props.movies[0]} /></li>
+                <li><Movie movieData={props.movies[1]} /></li>
+                <li><Movie movieData={props.movies[2]} /></li>
+               
+
+
             </ul>
         </div>
     )

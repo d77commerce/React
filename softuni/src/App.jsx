@@ -4,6 +4,7 @@ import ServiceBtn from './components/ServiceBtn'
 import MovieList from './components/MovieList'
 import MovieList1 from './components/MovieList1'
 import movies from './assets/movies'
+import Dice from './components/Dice'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,8 +30,9 @@ function App() {
     
         
             <div className="section">
-              <h1>Contacts</h1>
-              <p>Contact information goes here.</p>
+             
+              <button onClick= {Dice.Roll }>Play New game</button> 
+              <Dice.DoubleDice />
             </div>
             <MovieList1 />
             

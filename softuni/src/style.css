@@ -136,5 +136,28 @@ img {
     color: #666;
     margin: 10px 0;
   }
-  
-  /* Add more specific styling for individual sections if needed */
+
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.movie-description {
+  font-size: 1rem;
+  color: #555;
+}
+

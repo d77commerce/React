@@ -6,6 +6,8 @@ import MovieList1 from './components/MovieList1'
 import movies from './assets/movies'
 import Dice from './components/Dice'
 import Heading from './components/Heading'
+import productsArray from './assets/productsArray'
+import ProductsList from './components/ProductsList'
 
 
 function App() {
@@ -65,9 +67,10 @@ function App() {
           <h2>Separator</h2>
           </div>
 
-          <div >
+          <div className='white' >
             <h1>PRODUCTS</h1>
             <p>Check out our products.</p>
+            <ProductsList products={productsArray} />
        
           </div>
     

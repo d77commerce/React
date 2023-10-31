@@ -161,3 +161,16 @@ img {
   color: #555;
 }
 
+.product-list {
+  display: flex;
+  justify-content: center;
+}
+.product-card {
+  flex-direction: column; /* Display each product in a separate column */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 20px; /* Add margin between product columns if needed */
+  background-color: #f7f7f7;
+  text-align: center;
+  margin: 20px;
+}

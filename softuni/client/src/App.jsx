@@ -38,7 +38,7 @@ function App() {
             <div className="section">
              
               <button onClick= {Dice.Roll }>Play New game</button> 
-              <Dice.DoubleDice />
+              <Dice />
             </div>
             <MovieList1 />
             

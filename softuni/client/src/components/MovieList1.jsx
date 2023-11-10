@@ -7,7 +7,7 @@ import movies  from "../assets/movies";
             <ul>
                 {movies.map((movie) => {
                     return (
-                        <li>
+                        <li key={movie.Title}>
                             <h2>{movie.Title}</h2>
                             <p>{movie.Year}</p>
                         </li>

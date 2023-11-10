@@ -12,9 +12,16 @@ export default function Dice() {
     setMessage(`You rolled ${num1} + ${num2} = ${num1 + num2}`);
     setMessage2(num1 + num2 >= 7 ? "You win!" : "You lose!");
   };
+  const reset =()=>
+  {
+    setDices(1);
+    setMessage("Roll the dice");
+    setMessage2("_________________");
+  }
 
   return (
     <div style={{ color: dices >= 7 ? "Red" : "Blue" }}>
+      <button onClick= {reset }>Play New game</button> 
       <h1>{message}</h1>
       <button className="custom-button" onClick={roll}>Roll the dice</button>
       <h1>{message2}</h1>

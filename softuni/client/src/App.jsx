@@ -16,7 +16,10 @@ import About from './components/About'
 import StarWarsList from './components/StarWarsList'
 import StarWarsHero from './components/StarWarsHero'
 import NotFound from './components/NotFound'
-
+import TabButton from './components/TabButton'
+import ToDoList from './components/ToDoList'
+import TabBtns from './components/TabBtns'
+import ThreeButtonsWithText from './components/ThreeButtonsWithText'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -66,7 +69,20 @@ function App() {
               <p>Instructions for making an appointment.</p>
             </div>
           <ServiceBtn />
-    
+          <div className="section">
+            <menu>
+              <TabButton >Content</TabButton>
+              <TabButton>Art</TabButton>
+              <TabButton>Specification</TabButton>
+            </menu>
+           
+          </div>
+          <div className="section">
+          <ThreeButtonsWithText />  
+          </div>
+          <div className="section">
+            <ToDoList />
+          </div> 
           <div className="white">
             <a id="test"></a>
             <h1>Dolor Sit Amet</h1>
@@ -90,6 +106,10 @@ function App() {
           <div className="semitrans">
            <MovieList movies={movies} headingText="Movie list" />
           </div>
+          <div className="white">
+            <TabBtns> OnikSS</TabBtns>
+
+           </div>
     
           <div className="dark">
             <p>This is made by <a href="https://artmillennium.co.uk">ArtMillennium.co.uk</a>. Check out my <a href="https://clickandgrab.co.uk">website</a>!</p>

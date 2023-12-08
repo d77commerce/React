@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
 
 export default Navigation=()=> {
- return(  <nav>  
+ return(  
+ <nav>
     <Link to="/">
       <button>Home</button>
     </Link>
